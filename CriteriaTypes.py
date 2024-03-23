@@ -1,0 +1,19 @@
+from enum import Enum
+
+class TakeProfitAnchor(Enum):
+    ONE_TO_ONE_RR = 'ONE_TO_ONE_RR'
+    PREV_CANDLE_OPEN = 'PREV_CANDLE_OPEN'
+    PREV_CANDLE_WICK = 'PREV_CANDLE_WICK'
+
+class StopLossAnchor(Enum):
+    CURR_CANDLE_WICK = 'CURR_CANDLE_WICK'
+    CURR_CANDLE_BODY = 'CURR_CANDLE_BODY'
+    PREV_CANDLE_WICK = 'PREV_CANDLE_WICK'
+    """
+    PREV_CANDLE_WICK_HALF = 4
+    CURR_CANDLE_BODY_DOUBLE= 5
+    """
+
+class EntryCriteria(Enum):
+    RAILWAY_CHECK = 'RAILWAY_CHECK'
+    OUT_OF_CHANNEL_CHECK = 'OUT_OF_CHANNEL_CHECK'
